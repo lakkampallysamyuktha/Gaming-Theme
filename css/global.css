@@ -484,3 +484,53 @@ ul {
         padding: 0 0.8rem;
     }
 }
+
+/* Header logo image */
+.logo-img {
+    height: 65px;
+    width: auto;
+    display: block;
+    filter: brightness(0) invert(1);   /* ← makes the logo white */
+}
+
+/* Footer logo image */
+.footer-logo-img {
+    height: 65px;
+    width: auto;
+    display: block;
+    filter: brightness(0) invert(1);   /* ← makes the logo white */
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+    .nav-logo {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    .logo-icon {
+        font-size: 1.3rem;
+    }
+    .btn-nav {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.65rem;
+    }
+    .nav-actions {
+        gap: 0.4rem;
+        flex-direction: row;
+        align-items: center;
+    }
+    .hamburger span {
+        width: 20px;
+    }
+    .nav-container {
+        padding: 0 0.8rem;
+    }
+
+    /* Logo sizes on mobile */
+    .logo-img {
+        height: 60px;
+    }
+    .footer-logo-img {
+        height: 60px;
+    }
+}

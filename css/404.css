@@ -1,0 +1,91 @@
+:root {
+    --bg: #0a0a0f;
+    --text: #f1f1f3;
+    --accent-purple: #8b5cf6;
+    --accent-cyan: #06b6d4;
+    --font-heading: 'Orbitron', sans-serif;
+    --font-body: 'Rajdhani', sans-serif;
+}
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    z-index: 2;
+    padding: 2rem;
+}
+
+.error-code {
+    font-family: var(--font-heading);
+    font-size: clamp(6rem, 20vw, 12rem);
+    font-weight: 900;
+    background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+    0%, 100% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, -2px); }
+    60% { transform: translate(-1px, 1px); }
+    80% { transform: translate(1px, -1px); }
+}
+
+.message {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: var(--accent-cyan);
+    font-weight: 600;
+}
+
+.description {
+    color: #a0a0b0;
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.home-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--accent-purple);
+    color: #fff;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(139,92,246,0.4);
+}
+
+.home-btn:hover {
+    background: var(--accent-cyan);
+    box-shadow: 0 0 30px rgba(6,182,212,0.6);
+    transform: translateY(-3px);
+}
+
+.bg-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(139,92,246,0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+    z-index: 0;
+}

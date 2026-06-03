@@ -1,0 +1,58 @@
+.cta-section {
+    padding: 4rem 0 6rem;
+    background: var(--bg-secondary);
+}
+
+.cta-card {
+    background: var(--bg-card);
+    border-radius: 30px;
+    padding: 4rem 2rem;
+    text-align: center;
+    border: 1px solid rgba(139,92,246,0.3);
+    box-shadow: 0 0 40px rgba(139,92,246,0.1);
+}
+
+.cta-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cta-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-subtitle {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.cta-form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto 1rem;
+}
+
+.cta-input {
+    flex: 1 1 250px;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.05);
+    color: #fff;
+    font-family: var(--font-body);
+    outline: none;
+}
+.cta-input:focus {
+    border-color: var(--accent-purple);
+}
+
+.cta-note {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+}

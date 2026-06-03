@@ -1,0 +1,19 @@
+/* css/stats.css */
+.stats-section { position:relative; padding:6rem 0; overflow:hidden; }
+.stats-bg-img-wrapper { position:absolute; inset:0; z-index:0; }
+.stats-bg-img { width:100%; height:100%; object-fit:cover; }
+.stats-overlay { position:absolute; inset:0; background:linear-gradient(135deg, rgba(10,10,15,0.94) 0%, rgba(10,10,15,0.85) 50%, rgba(18,18,26,0.92) 100%); z-index:1; }
+.stats-content { position:relative; z-index:2; }
+.team-section .section-tag {
+    color: #1e3a8a;   /* dark navy blue – identical to stats */
+}
+.stats-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:2.5rem; margin-top:3.5rem; }
+.stat-card { background:rgba(255,255,255,0.03); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,0.06); border-radius:24px; padding:2.5rem 1.5rem; text-align:center; transition:all 0.4s ease; position:relative; overflow:hidden; }
+.stat-card:hover { transform:translateY(-5px); border-color:rgba(139,92,246,0.3); box-shadow:0 20px 40px rgba(0,0,0,0.45); }
+.stat-icon-wrap { font-size:2.2rem; color:var(--accent-cyan); margin-bottom:1rem; display:inline-block; opacity:0.9; }
+.stat-card:hover .stat-icon-wrap { transform:scale(1.1); }
+.stat-value { display:flex; align-items:baseline; justify-content:center; gap:0.2rem; margin-bottom:0.8rem; }
+.stat-number { font-family:var(--font-heading); font-size:3rem; font-weight:900; background:var(--gradient-main); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; line-height:1; }
+.stat-suffix { font-size:1.5rem; font-weight:700; color:var(--accent-cyan); font-family:var(--font-heading); }
+.stat-label { color:var(--text-secondary); font-size:0.95rem; font-weight:500; text-transform:uppercase; letter-spacing:0.5px; }
+@media (max-width:768px) { .stats-section { padding:5rem 0; } .stat-card { padding:2rem 1.2rem; } .stat-number { font-size:2.5rem; } }

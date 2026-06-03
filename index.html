@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly Gaming </title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/games.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/stats.css">
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="css/cta.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-diamond"><span class="loader-icon">◆</span></div>
+        <p class="loader-text">Loading Stackly…</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo"><span class="logo-icon">◆</span> STACKLY<span class="logo-highlight"></span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="404.html">About</a></li>
+                <li><a href="404.html">Games</a></li>
+                <li><a href="404.html">Features</a></li>
+                <li><a href="404.html">Team</a></li>
+                <li><a href="404.html">Reviews</a></li>
+                <li><a href="404.html">Join Us</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="404.html" class="btn-nav">Sign In</a>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section containers (populated by load-sections.js) -->
+    <main>
+        <div id="hero-container"></div>
+        <div id="about-container"></div>
+        <div id="games-container"></div>
+        <div id="features-container"></div>
+        <div id="stats-container"></div>
+        <div id="team-container"></div>
+        <div id="testimonials-container"></div>
+        <div id="cta-container"></div>
+        <div id="footer-container"></div>
+    </main>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="js/load-sections.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
